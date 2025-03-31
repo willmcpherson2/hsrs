@@ -1,0 +1,11 @@
+[package]
+name = "chs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "add"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+cbindgen = "0.28.0"

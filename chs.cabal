@@ -7,8 +7,8 @@ executable chs
   hs-source-dirs:     app
   main-is:            Main.hs
   other-modules:      Add
-  include-dirs:       include
-  extra-lib-dirs:     lib
+  include-dirs:       target
+  extra-lib-dirs:     target/debug
   extra-libraries:    add
   default-language:   Haskell2010
   build-depends:      base >=4.7 && <5
