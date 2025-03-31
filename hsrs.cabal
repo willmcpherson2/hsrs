@@ -1,9 +1,9 @@
 cabal-version: 3.4
-name:          chs
+name:          hsrs
 version:       0.1.0.0
 build-type:    Simple
 
-executable chs
+executable hsrs
   hs-source-dirs:     app
   main-is:            Main.hs
   other-modules:      Add
