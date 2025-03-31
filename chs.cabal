@@ -1,0 +1,14 @@
+cabal-version: 3.4
+name:          chs
+version:       0.1.0.0
+build-type:    Simple
+
+executable chs
+  hs-source-dirs:     app
+  main-is:            Main.hs
+  other-modules:      Add
+  include-dirs:       c
+  c-sources:          c/add.c
+  default-language:   Haskell2010
+  build-depends:      base >=4.7 && <5
+  build-tool-depends: c2hs:c2hs >= 0.28.8
