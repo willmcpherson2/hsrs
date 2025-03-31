@@ -7,8 +7,8 @@ executable hsrs
   hs-source-dirs:     hs
   main-is:            Main.hs
   other-modules:      Add
-  include-dirs:       target
-  extra-lib-dirs:     target/debug
+  include-dirs:       lib
+  extra-lib-dirs:     lib
   extra-libraries:    add
   default-language:   Haskell2010
   build-depends:      base >=4.7 && <5
