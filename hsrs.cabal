@@ -12,4 +12,4 @@ executable hsrs
   extra-libraries:    add
   default-language:   Haskell2010
   build-depends:      base >=4.7 && <5
-  build-tool-depends: c2hs:c2hs >= 0.28.8
+  build-tool-depends: c2hs:c2hs >=0.28.8

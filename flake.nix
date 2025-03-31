@@ -28,6 +28,9 @@
           buildInputs = [
             pkgs.cabal-install
             pkgs.haskell.compiler.ghc910
+            pkgs.haskellPackages.cabal-fmt
+            pkgs.haskellPackages.ormolu
+
             (pkgs.haskell-language-server.override { supportedGhcVersions = [ "910" ]; })
             (pkgs.rust-bin.nightly."2025-03-31".default.override {
               extensions = [
