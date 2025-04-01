@@ -21,3 +21,6 @@ impl Point {
         println!("{:?}", self)
     }
 }
+
+#[no_mangle]
+pub extern "C" fn free_point(_point: Box<Point>) {}

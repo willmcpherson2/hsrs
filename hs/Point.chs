@@ -12,3 +12,5 @@ import Foreign.C.Types
 {#fun point_length as ^ { `PointPtr' } -> `Double' #}
 
 {#fun print_point as ^ { `PointPtr' } -> `()' #}
+
+{#fun free_point as ^ { `PointPtr' } -> `()' #}

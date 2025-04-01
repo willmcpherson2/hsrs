@@ -8,3 +8,4 @@ main = do
   printPoint point
   result <- pointLength point
   putStrLn $ "point length: " <> show result
+  freePoint point
