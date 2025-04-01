@@ -13,7 +13,7 @@ impl Point {
 
     #[no_mangle]
     pub extern "C" fn point_length(&self) -> f64 {
-        (self.x * self.x + self.y * self.y).sqrt()
+        (self.x.powi(2) + self.y.powi(2)).sqrt()
     }
 
     #[no_mangle]
