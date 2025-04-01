@@ -1,8 +1,10 @@
 module Main where
 
-import Add
+import Point
 
 main :: IO ()
 main = do
-  result <- add 5 7
-  putStrLn $ "5 + 7 = " ++ show result
+  point <- newPoint 1.5 2.0
+  printPoint point
+  result <- pointLength point
+  putStrLn $ "point length: " <> show result
