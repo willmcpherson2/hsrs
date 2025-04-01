@@ -18,3 +18,10 @@ fmt:
 	cargo fmt
 	cabal-fmt -i *.cabal
 	ormolu -i $$(find hs -name "*.hs")
+
+.PHONY: update
+update:
+	nix flake update
+	cargo update
+	cabal update
+	cabal build --upgrade-dependencies

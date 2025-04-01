@@ -30,6 +30,10 @@ Then `cabal build` will be run, which will use [c2hs](https://github.com/haskell
 
 This runs `cargo clean`, `cabal clean` and `rm -rf lib`.
 
+## `make update`
+
+This updates Nix, Cargo and Cabal dependencies.
+
 ## `make fmt`
 
 This runs [`cargo fmt`](https://github.com/rust-lang/rustfmt), [`cabal-fmt`](https://github.com/phadej/cabal-fmt) and [`ormolu`](https://github.com/tweag/ormolu).
