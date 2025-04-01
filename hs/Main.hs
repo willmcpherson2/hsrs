@@ -1,6 +1,6 @@
 module Main where
 
-import Point
+import Lib
 
 main :: IO ()
 main = do

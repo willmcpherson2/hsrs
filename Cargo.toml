@@ -5,7 +5,6 @@ edition = "2021"
 
 [lib]
 path = "rs/lib.rs"
-name = "point"
 crate-type = ["cdylib"]
 
 [build-dependencies]

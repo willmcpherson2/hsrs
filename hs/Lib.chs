@@ -1,9 +1,9 @@
-module Point where
+module Lib where
 
 import Foreign.Ptr
 import Foreign.C.Types
 
-#include "point.h"
+#include "hsrs.h"
 
 {#pointer *Point as PointPtr foreign newtype #}
 

@@ -6,10 +6,10 @@ build-type:    Simple
 executable hsrs
   hs-source-dirs:     hs
   main-is:            Main.hs
-  other-modules:      Point
+  other-modules:      Lib
   include-dirs:       lib
   extra-lib-dirs:     lib
-  extra-libraries:    point
+  extra-libraries:    hsrs
   default-language:   Haskell2010
   build-depends:      base >=4.7 && <5
   build-tool-depends: c2hs:c2hs >=0.28.8
