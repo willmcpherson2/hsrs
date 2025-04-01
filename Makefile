@@ -7,6 +7,12 @@ build:
 	cargo build -Z unstable-options --artifact-dir=lib
 	cabal build
 
+.PHONY: clean
+clean:
+	cargo clean
+	cabal clean
+	rm -rf lib
+
 .PHONY: fmt
 fmt:
 	cargo fmt
