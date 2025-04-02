@@ -5,6 +5,7 @@ run: build
 .PHONY: build
 build:
 	cargo build -Z unstable-options --artifact-dir=lib
+	cabal update
 	cabal build
 
 .PHONY: clean
