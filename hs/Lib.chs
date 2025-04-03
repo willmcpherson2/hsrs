@@ -9,7 +9,7 @@ import Foreign.C.Types
 
 {#fun new_point as ^ { `Double', `Double' } -> `PointPtr' #}
 
-{#fun pure point_length as ^ { `PointPtr' } -> `Double' #}
+{#fun point_length as ^ { `PointPtr' } -> `Double' #}
 
 {#fun print_point as ^ { `PointPtr' } -> `()' #}
 
