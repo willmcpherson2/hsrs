@@ -1,9 +1,14 @@
+HACKAGE := $(HOME)/.cache/cabal/packages/hackage.haskell.org
+
 .PHONY: run
 run: build
 	cabal run
 
+$(HACKAGE):
+	@cabal update
+
 .PHONY: build
-build:
+build: $(PACKAGE_DB)
 	cargo build -Z unstable-options --artifact-dir=lib
 	cabal build
 
@@ -25,4 +30,3 @@ update:
 	cargo update
 	cabal update
 	cabal build --upgrade-dependencies
-	cabal freeze
