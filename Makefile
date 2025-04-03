@@ -8,7 +8,7 @@ $(HACKAGE):
 	@cabal update
 
 .PHONY: build
-build: $(PACKAGE_DB)
+build: $(HACKAGE)
 	cargo build -Z unstable-options --artifact-dir=lib
 	cabal build
 
